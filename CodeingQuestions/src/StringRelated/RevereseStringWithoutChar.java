@@ -14,9 +14,9 @@ public class RevereseStringWithoutChar {
 	            char f= st.charAt(i);
 	            char l= st.charAt(j);
 	            if(! (Character.isLetterOrDigit(f))){
-	                revStrArr[i] =f; i++;
+	                i++;
 	            }else if(! (Character.isLetterOrDigit(l))){
-	                 revStrArr[i] =l;j--;
+	                 j--;
 	            }else{
 	                char temp=l;
 	                revStrArr[j]=f;

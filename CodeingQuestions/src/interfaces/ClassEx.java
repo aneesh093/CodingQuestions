@@ -7,24 +7,26 @@ package interfaces;
 public class ClassEx extends B {
 
 	public static void main(String[] args) {
-		
 		B a= new B();
-		a.show();
-
+		System.out.println(a.show());
 	}
-
 }
 
 class A{
-
-	public void show() {
-		System.out.println("Show Called A");
+	A(){
+	}
+	public String show() {
+//		System.out.println("Show Called A");
+		return "Hello";
 	}
 }
 
 class B extends A{
-
-	public void show() {
-		System.out.println("Show Called B");
+	B(){
+		super();
+	}
+	public String show() {
+		System.out.println("Test");
+		return super.show();
 	}
 }
