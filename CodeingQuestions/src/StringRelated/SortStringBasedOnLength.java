@@ -17,6 +17,8 @@ public class SortStringBasedOnLength {
 					.collect(Collectors.toList()).forEach(System.out::println);
 		
 		System.out.println(test.stream().reduce((w1, w2) -> w1.length() > w2.length() ? w1 : w2).get());
+		
+		System.out.println("Max Length "+test.stream().map(String::length).max(Comparator.naturalOrder()).get());
 
 	}
 

@@ -57,6 +57,8 @@ public class EmployeeWithJava8 {
 			System.out.println(e1.getAsLong());
 		}
 		
+		e1.ifPresent(value -> System.out.println(value));
+		
 		// Find Average salary of Male and Female Employees
 		empList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.averagingLong(Employee::getSalary))).
 					entrySet().forEach(System.out::println);
