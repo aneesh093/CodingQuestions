@@ -1,4 +1,4 @@
-package programs;
+package singletons;
 
 public class SingleTonExample {
 
