@@ -34,6 +34,13 @@ public class DemoObject {
 		this.name = name;
 		this.salary = salary;
 	}
+	public DemoObject() {
+		super();
+	}
+	@Override
+	public String toString() {
+		return "DemoObject [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
 	
 	
 	
