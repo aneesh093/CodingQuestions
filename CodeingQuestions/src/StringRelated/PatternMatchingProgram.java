@@ -26,6 +26,7 @@ public class PatternMatchingProgram {
 		Collections.reverse(words);
 		String output=String.join(" ", words);
 		System.out.println(output);
+		
 	}
 
 }
