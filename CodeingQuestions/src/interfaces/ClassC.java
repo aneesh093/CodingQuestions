@@ -6,7 +6,6 @@ package interfaces;
 public class ClassC implements InterfaceA,InterfaceB {
 
 	public static void main(String[] args) {
-		
 	}
 
 	@Override

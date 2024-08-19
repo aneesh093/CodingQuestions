@@ -7,7 +7,7 @@ public class SumOfTwoElement {
 
 	public static void main(String[] args) {
 
-		int[] arr= {1,2,3,5,3,9,6};
+		int[] arr= {1,2,3,5,3,9,6,7};
 		int target=10;
 		
 		Set<Integer> te=new HashSet<>();
@@ -16,7 +16,7 @@ public class SumOfTwoElement {
 			
 			int c = target-i;
 			if(te.contains(c)) {
-				System.out.println(i +" "+c);
+				System.out.println(c +" "+i);
 			}
 			te.add(i);
 		}

@@ -19,7 +19,7 @@ public class ThreadJoinMethod {
 		t2.start();
 		try {
 			t2.join();
-		}catch (Exception e) {
+		}catch (InterruptedException e) {
 		}
 		t1.start();
 		t3.start();

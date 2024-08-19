@@ -15,5 +15,4 @@ public class ReverseEachWordOfString {
 		String s2=Stream.of(s1.split(" ")).map( t -> new StringBuffer(t).reverse()).collect(Collectors.joining(" "));
 		System.out.println(s2);
 	}
-
 }

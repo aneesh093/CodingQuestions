@@ -9,12 +9,13 @@ public class RecursionExample {
 		
 		System.out.println("Ascending Order using Recursion");
 		printNumber1(5);
+		System.out.println("dd");
 	}
 
 	public static void printNumber(int n) {
 		if(n>0) {
-			printNumber(n-1);
 			System.out.println(n);
+			printNumber(n-1);
 		}
 	}
 	
