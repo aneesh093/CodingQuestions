@@ -115,7 +115,40 @@ public class EmployeeWithJava8 {
 		empList.stream().collect(Collectors.groupingBy(Employee::getDeptName,Collectors
 				.collectingAndThen(Collectors.toList(), list ->  list.stream()
 						.sorted(Comparator.comparing(Employee::getSalary,Comparator.reverseOrder())).skip(1).findAny()))).entrySet().forEach(System.out::println);;
+	
+	
+		// Select department name and no of employees in the department and sum of their salaries
+		empList.stream().collect(Collectors.groupingBy(Employee::getDeptName,Collectors
+								.collectingAndThen(Collectors.toList(), 
+										list -> new DepartmentSummary(list.size(),
+												list.stream().mapToDouble(Employee::getSalary).sum()))))
+		.entrySet().forEach(System.out::println);
 	}
 	
 
+}
+
+class DepartmentSummary{
+	private final int employeeCount;
+    private final double totalSalary;
+
+    public DepartmentSummary(int employeeCount, double totalSalary) {
+        this.employeeCount = employeeCount;
+        this.totalSalary = totalSalary;
+    }
+
+    public int getEmployeeCount() {
+        return employeeCount;
+    }
+
+    public double getTotalSalary() {
+        return totalSalary;
+    }
+
+	@Override
+	public String toString() {
+		return "DepartmentSummary [employeeCount=" + employeeCount + ", totalSalary=" + totalSalary + "]";
+	}
+    
+   
 }
