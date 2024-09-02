@@ -3,7 +3,6 @@ package StringRelated;
 import java.util.LinkedHashMap;
 
 public class ConvertStringToMap {
-
 	public static void main(String[] args) {
 
 		String test="tarun:1]kumar:2]Amit=4]Ani;5";
@@ -19,5 +18,6 @@ public class ConvertStringToMap {
 		
 		System.out.println(map);
 	}
-
 }
+
+

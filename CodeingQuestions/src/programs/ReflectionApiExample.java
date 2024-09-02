@@ -7,7 +7,7 @@ public class ReflectionApiExample {
 
 	public static void main(String[] args) throws ClassNotFoundException  {
 
-		Class cls= Class.forName("programs.TestClass1");
+		Class<?> cls= Class.forName("programs.TestClass1");
 		
 		Constructor[] cns =cls.getConstructors();
 		for(Constructor c: cns) {

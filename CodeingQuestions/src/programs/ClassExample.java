@@ -3,13 +3,12 @@ package programs;
 public class ClassExample {
 
 	public static void main(String[] args) {
-		B b=new B();
+		A b=new B();
 		b.test();
 	}
-
 }
 
-class A{
+class A {
 	public void show() {
 		System.out.println("A");
 	}
@@ -19,7 +18,7 @@ class A{
 	}
 }
 
-class B extends A{
+class B extends A {
 	public void show() {
 		System.out.println("B");
 	}

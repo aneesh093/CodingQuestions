@@ -36,7 +36,8 @@ public class FlatteringListUsingComparator {
 
 		System.out.println("\nSort Using name and salary");
 		Stream.concat(list.stream(), list2.stream())
-				.sorted(Comparator.comparing(DemoObject::getName).thenComparing(DemoObject::getSalary)).forEach(t -> {
+				.sorted(Comparator.comparing(DemoObject::getName)
+				.thenComparing(DemoObject::getSalary)).forEach(t -> {
 					System.out.println(t.getId() + " " + t.getName() + " " + t.getSalary());
 				});
 	}

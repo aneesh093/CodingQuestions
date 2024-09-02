@@ -17,9 +17,11 @@ public class WeakHashMapExample {
 
 		Map<DemoObject,String> testMap =new WeakHashMap<>();
 		DemoObject ob1 =new DemoObject();
+		ob1.setId(1);
 		
 		Map<DemoObject,String> hashMap =new HashMap<>();
 		DemoObject ob2 =new DemoObject();
+		ob2.setId(1);
 		
 		testMap.put(ob1, "Demo Object 1");
 		hashMap.put(ob2, "Demo Object 2");
