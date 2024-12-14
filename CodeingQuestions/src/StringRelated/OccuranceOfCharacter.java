@@ -22,8 +22,6 @@ public class OccuranceOfCharacter {
 
 		java.util.Map<Character, Integer> testMap = new HashMap<>();
 
-
-		
 		Map<String,Long> t1=Arrays.asList(s.split("")).stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 		
 		// to find out maximum occurred character
