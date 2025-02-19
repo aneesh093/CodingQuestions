@@ -23,8 +23,9 @@ public class BalanceBrackets {
 			count++;
 		}
 
-		if (count == (testMap.size()/2))
+		if (count == (testMap.size()/2)) {
 			System.out.println("Balanced String");
+		}
 		else
 			System.out.println("Not a Balanced String");
 	}
